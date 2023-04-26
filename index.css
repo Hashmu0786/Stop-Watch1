@@ -1,0 +1,99 @@
+
+* {
+    box-sizing: border-box;
+  }
+  body {
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(https://th.bing.com/th/id/R.0a687c59c5de4b278d61753cad929c63?rik=rZqr6CgSfYMvhQ&riu=http%3a%2f%2fwww.pixelstalk.net%2fwp-content%2fuploads%2f2016%2f07%2fSunrise-Image-Pictures.jpg&ehk=Drb6bWM4Z%2b91ooK%2f%2bRppGY49TDoJ%2bgSedHxWtj6KBnY%3d&risl=&pid=ImgRaw&r=0);
+    backdrop-filter: blur(10px);
+  }
+  
+  /* color for digit and text */
+  #container {
+    color: silver;
+  }
+  #heading{
+   text-align: center;
+   color: white;
+   font-weight: 500;
+   font-size:70px;
+   line-height: 1rem;
+  }
+  .digit {
+    font-size: 150px;
+    font-weight: bold;
+  }
+  
+  .text {
+    font-weight: bold;
+    font-size: 40px;
+  }
+  
+  #btns-container {
+    text-align: center;
+    padding: 90px;
+  }
+  
+  .btn {
+    padding: 20px;
+    font-size: 25px;
+    font-weight: bold;
+    margin: 20px;
+    border: 0;
+    border-radius: 5em;
+    cursor: pointer;
+  }
+  /* colon displaying none for large devices only display in small devices */
+  .colon {
+    display: none;
+  }
+  
+  /* media query for sm devices */
+  @media only screen and (max-width: 499px) {
+    body {
+      background-color: black;
+      text-align: center;
+      width: 99vw;
+    }
+    .digit {
+      font-size: 60px;
+      font-weight: bold;
+    }
+    .text {
+      display: none;
+    }
+    .colon {
+      display: unset;
+      font-size: 50px;
+    }
+    #msec {
+      display: block;
+    }
+    #container {
+      margin-top: 40px;
+    }
+  }
+  
+  /* media query for md devices */
+  @media only screen and (max-width: 992px) {
+    body {
+      display: unset;
+      text-align: center;
+    }
+    .digit {
+      font-size: 70px;
+      font-weight: bold;
+    }
+    .text {
+      font-size: 25px;
+    }
+    #btns-container {
+      text-align: center;
+      padding: 50px;
+    }
+  }
+  
